@@ -6,6 +6,9 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <script type="text/javascript">
+
+</script>
+<script type="text/javascript">
 	function login(){ 
 	    document.form1.action="login.do";
 	    document.form1.submit();

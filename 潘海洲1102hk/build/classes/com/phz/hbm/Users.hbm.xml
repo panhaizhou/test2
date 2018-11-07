@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.phz.entity.User" table="t_user">
+		<id name="userId" type="java.lang.Integer">
+			<column name="user_id"></column>
+			<!-- 指定数据库依靠底层方式(数据库自增) -->
+			<generator class="native"></generator>
+		</id>
+		<property name="userName" type="java.lang.String">
+			<column name="user_name" sql-type="varchar(50)"></column>
+		</property>
+		<property name="userPwd" type="java.lang.String">
+			<column name="user_pwd" sql-type="varchar(50)"></column>
+		</property>
+		<property name="userAge" type="java.lang.String">
+			<column name="user_age" sql-type="varchar(50)"></column>
+		</property>
+		<property name="userSex" type="java.lang.String">
+			<column name="user_sex" sql-type="varchar(50)"></column>
+		</property>
+	</class>
+</hibernate-mapping>
